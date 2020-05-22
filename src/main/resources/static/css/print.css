@@ -1,0 +1,339 @@
+#wrapper_h { width: 100%; background: url(images/headerrepeat.jpg) repeat-x top }
+#header_wh {
+    width: 100%;
+    background: url(images/huawei2.png) top center no-repeat
+}
+#menu { clear: both; padding: 10px; width: 960px; height: 30px; background: url(images/menu.png)}
+#header {
+    width: 980px;
+    margin: 0 auto;
+}
+.header_home { height: 620px }
+
+
+.ddsmoothmenu{
+}
+
+.ddsmoothmenu ul{
+    z-index: 100;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.ddsmoothmenu ul li{
+    position: relative;
+    display: inline;
+    float: left;
+}
+
+/*Top level menu link items style*/
+.ddsmoothmenu ul li a,.ddsmoothmenu ul li button {
+    display: block;
+    height: 30px;
+    width: 80px;
+    margin-right: 5px;
+    line-height: 30px;
+    font-size: 13px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    color: #333;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 400;
+    outline: none;
+}
+
+* html .ddsmoothmenu ul li a{ /*IE6 hack to get sub menu links to behave correctly*/
+    display: inline-block;
+}
+
+.ddsmoothmenu ul li a.selected, .ddsmoothmenu ul li a:hover { /*CSS class that's dynamically added to the currently active menu items' LI A element*/
+    color: #fff;
+    background: url(images/menu_hover.png)
+}
+
+/*1st sub level menu*/
+.ddsmoothmenu ul li ul {
+    position: absolute;
+    width: 180px;
+    padding: 0 2px;
+    margin: 10px 0 0 5px;
+    display: none; /*collapse all sub menus to begin with*/
+    visibility: hidden;
+    background: #fff;
+    opacity: 0.96;
+}
+
+/*Sub level menu list items (undo style from Top level List Items)*/
+.ddsmoothmenu ul li ul li{
+    display: list-item;
+    float: none;
+}
+
+/*All subsequent sub menu levels vertical offset after 1st level sub menu */
+.ddsmoothmenu ul li ul li ul{
+    top: 0;
+}
+
+/* Sub level menu links style */
+.ddsmoothmenu ul li ul li a{
+    font-weight: 500;
+    width: 145px; /*width of sub menus*/
+    height: 35px;
+    padding: 0 20px;
+    margin: 0;
+    line-height: 35px;
+    font-size: 12px;
+    text-align: left;
+    background: none;
+    color: #666;
+    border-bottom: 1px solid #f5f5f5;
+    opacity: 1;
+}
+
+.ddsmoothmenu ul li ul li a.selected, .ddsmoothmenu ul li ul li a:hover {
+    color: #000;
+    padding-left: 21px;
+    width: 144px;
+    background: none
+}
+
+/* Holly Hack for IE \*/
+* html .ddsmoothmenu{height: 1%;} /*Holly Hack for IE7 and below*/
+
+.container {
+    width: 1170px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.grid-in {
+    padding: 2em 0 0;
+    text-align: center;
+    box-sizing: border-box;
+}
+.col4{
+    position: relative;
+    width: 25%;
+    float: left;
+}
+
+.footer-class {
+    padding: 1.5em 0;
+    text-align: center;
+    background: white;
+}
+.footer-class p {
+    color: #000000;
+    font-size: 1.2em;
+}
+
+
+
+
+.col_13 {
+    width: 550px;
+    float: left;
+    margin-right: 20px;
+}
+.col_13_13 {
+    margin-right: 0;
+    width: 300px;
+    float: left;
+    color: #666;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 13px;
+    line-height: 1.4em;
+}
+.product-button {
+    float: left;
+    margin-right: 10px;
+    display: block;
+    background: #fc600c;
+    width: 172px;
+    height: 46px;
+    font-size: 18px;
+    line-height: 46px;
+    text-align: center;
+    color: #fff;
+    border-radius: 2px;
+    border: 0;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.thumb{
+    display: inline-block;
+    height: 100%;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    color: #3a3a3a;
+    list-style: none;
+    background: #f9f9f9;
+    width: 80%;
+}
+
+.registration_left {
+    float: left;
+    width: 45.33333%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 100%;
+    margin-left: 9.333%;
+}
+label {
+    display: block;
+    margin-bottom: 0;
+    font-weight: normal;
+}
+.registration_left:first-child {
+    margin-left: 0;
+}
+.rir {
+    -webkit-appearance: none;
+    font-family: 'Open Sans', sans-serif;
+    color: #ffffff;
+    text-transform: capitalize;
+    display: inline-block;
+    background: #ff6978;
+    padding: 10px 20px;
+    transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+    -webkit-transition: 0.5s ease;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    margin-bottom: 5px;
+}
+.registration_form div {
+    padding: 10px 0;
+}
+
+.registration_form input[type="text"], .registration_form input[type="email"], .registration_form input[type="tel"], .registration_form input[type="password"] {
+    padding: 8px;
+    display: block;
+    width: 100%;
+    outline: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.8925em;
+    color: #333333;
+    -webkit-appearance: none;
+    text-transform: capitalize;
+    background: #FFFFFF;
+    border: 1px solid rgb(231, 231, 231);
+    font-weight: normal;
+}
+
+.registration {
+    padding: 3% 1%;
+}
+.container2{
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 1170px;
+}
+
+.table-head-mod__table___17eFg {
+    margin: 20px 0 0 0;
+    background-color: #f5f5f5;
+    border: 1px solid #e8e8e8;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.bought-table-mod__table___1MPLL {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    color: #3c3c3c;
+    table-layout: fixed;
+    font-weight: 400;
+}
+.bought-table-mod__col1___3kNhV {
+    width: 40%;
+}
+.bought-table-mod__col2___262xB {
+    width: 15%;
+}
+.bought-table-mod__col3___262xB {
+    width: 30%;
+}
+.bought-table-mod__col3___263xB {
+    width: 20%;
+}
+.table-head-mod__table___17eFg th {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.bought-table-mod__table___1MPLL th {
+    font-weight: 400;
+}
+
+
+.row {
+    border-collapse: collapse;
+    border-spacing: 0;
+    color: #3c3c3c;
+}
+.suborder-mod__production___3WebF {
+    margin-left: 20px;
+    text-align: left;
+}
+td{
+    text-align: center;
+    border-width: 1px 1px 0 0;
+    border-style: solid;
+    border-color: #daf3ff;
+}
+#content {
+    width: 990px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+
+.cart-filter-bar {
+    padding-top: 50px;
+    font-size: 18px;
+    position: relative;
+}
+.cart-filter-bar .cart-sum {
+    padding-top: 15px;
+    padding-right: 140px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 25px;
+    line-height: 25px;
+}
+.cart-sum .price {
+    font-weight: 700;
+    margin-right: 5px;
+    color: #f40;
+}
+.total-symbol {
+    font-size: 12px;
+    font-weight: 400;
+}
+.cart-sum .submit-btn {
+    display: inline-block;
+    width: 55px;
+    color: #fff;
+    background: #f40;
+    border-radius: 2px;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+}
+.wrap-line {
+    clear: both;
+    background: #e6e6e6;
+    height: 2px;
+    position: relative;
+    font-size: 12px;
+}

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zh-CN" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta name="renderer" content="webkit">
+    <!-- 若页面需默认用极速核，增加标签：<meta name="renderer" content="webkit"> -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <!-- 以上代码IE=edge告诉IE使用最新的引擎渲染网页，chrome=1则可以激活Chrome Lrame. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <!--  宽度为设备宽度，初始缩放比例为 1 倍，禁止用户缩放 -->
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <link rel="stylesheet" type="text/css" href="../css/print.css">
+    <link rel="shortcut icon" href="#"/>
+</head>
+
+<body>
+<div id="wrapper_h">
+    <div id="header_wh">
+        <div id="header" class="home">
+            <br>
+            <br>
+            <br>
+            <br>
+            <div id="menu" class="ddsmoothmenu">
+                <ul>
+                    <li><a href="homePage.html">首页</a></li>
+                    <li><a href="cart.html" id="cr">购物车</a></li>
+                    <li><a href="order.html" id="od">历史订单</a></li>
+                    <li style="float: right" id="lg"><a href="login.html">登录/注册</a></li>
+                    <li style="float: right" id="lo"><a href="" onclick="logout()">退出账号</a></li>
+                </ul>
+
+                <br style="clear: left"/>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="content">
+    <div class="container">
+        <h2 style="text-align: center;">热销单品</h2>
+        <div class="grid-in">
+            <div class="col4">
+                <a href="phone/10S.html" class="thumb" target="_blank">
+                    <img src="../css/images/10S.png" width="200" height="200">
+                    <p>华为畅享 10S</p>
+                </a>
+            </div>
+            <div class="col4">
+                <a href="phone/20.html" class="thumb" target="_blank">
+                    <img src="../css/images/20.png" width="200" height="200">
+                    <p>荣耀20青春版</p>
+                </a>
+            </div>
+            <div class="col4">
+                <a href="phone/play3.html" class="thumb" target="_blank">
+                    <img src="../css/images/play3.png" width="200" height="200">
+
+                    <p>荣耀Play3</p>
+                </a>
+            </div>
+            <div class="col4">
+                <a href="phone/20pro.html" class="thumb" target="_blank">
+                    <img src="../css/images/20pro.png" width="200" height="200">
+
+                    <p>荣耀20 PRO</p>
+                </a>
+            </div>
+        </div>
+        <div class="col4"><br></div>
+        <div class="col4"><br></div>
+        <div class="col4"><br></div>
+        <div class="col4"><br></div>
+        <div class="col4"><br></div>
+        <div class="col4"><br></div>
+        <div class="col4"><br></div>
+        <div class="col4"><br></div>
+        <div class="grid-in">
+            <div class="col4">
+                <a href="phone/v30.html" class="thumb" target="_blank">
+                    <img src="../css/images/v30.png" width="200" height="200">
+
+                    <p>荣耀V30</p>
+                </a>
+            </div>
+            <div class="col4">
+                <a href="phone/nova6.html" class="thumb" target="_blank">
+                    <img src="../css/images/nova6.png" width="200" height="200">
+
+                    <p>华为 nova6</p>
+                </a>
+            </div>
+            <div class="col4">
+                <a href="phone/nova5.html" class="thumb" target="_blank">
+                    <img src="../css/images/nova5.png" width="200" height="200">
+
+                    <p>华为 nova5</p>
+                </a>
+            </div>
+            <div class="col4">
+                <a href="phone/mate30.html" class="thumb" target="_blank">
+                    <img src="../css/images/mate30.png" width="200" height="200">
+
+                    <p>华为 Mate30</p>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<div>
+    <center><p>© 2020 Huawei store All Rights Reserved | Design by ZexuHan</p></center>
+</div>
+<br><br>
+
+<script src="../js/general.js"></script>
+</body>
+<script>
+    window.onload = isOnline;
+</script>
+</html>

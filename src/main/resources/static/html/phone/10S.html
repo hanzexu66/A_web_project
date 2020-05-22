@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta name="renderer" content="webkit">
+    <!-- 若页面需默认用极速核，增加标签：<meta name="renderer" content="webkit"> -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <!-- 以上代码IE=edge告诉IE使用最新的引擎渲染网页，chrome=1则可以激活Chrome Lrame. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <!--  宽度为设备宽度，初始缩放比例为 1 倍，禁止用户缩放 -->
+    <meta charset="UTF-8">
+    <title>10S</title>
+    <link rel="stylesheet" type="text/css" href="../../css/print.css">
+</head>
+
+<body>
+<div id="wrapper_h">
+    <div id="header_wh">
+        <div id="header" class="home">
+            <br>
+            <br>
+            <br>
+            <br>
+            <div id="menu" class="ddsmoothmenu">
+                <ul>
+                    <li><a href="../homePage.html">首页</a></li>
+                    <li><a href="../cart.html" id="cr">购物车</a></li>
+                    <li><a href="../order.html" id="od">历史订单</a></li>
+                    <li style="float: right" id="lg"><a href="../login.html">登录/注册</a></li>
+                    <li style="float: right" id="lo"><a href="" onclick="logout()">退出账号</a></li>
+                </ul>
+
+                <br style="clear: left" />
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+<br>
+<div>
+    <div class="col_13">
+        <center><img height="350" width="350" src="../../css/images/10S.png"></center>
+    </div>
+    <div class="col_col_13">
+        <div style="float: left">
+        <h1>10S 6GB+64GB 全网通版（幻夜黑）</h1>
+            <br>
+            <h3>6.3英寸炫彩OLED全面屏|4800万超广角AI三摄|手持超级夜景</h3>
+            <br>
+        <h3>价格：    ￥3000</h3>
+
+            <br>
+            <a class="product-button"  onclick="addCart(1)">
+                <span>加入购物车</span>
+            </a>
+            <a class="product-button" style="margin-left: 30px" onclick="buyOne(1)">
+                <span>立即购买</span>
+            </a>
+        </div>
+    </div>
+</div>
+<script src="../../js/shop.js"></script>
+<script src="../../js/general.js"></script>
+</body>
+<script>
+    window.onload = isOnline;
+</script>
+</html>
