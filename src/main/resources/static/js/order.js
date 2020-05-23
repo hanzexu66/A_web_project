@@ -1,7 +1,8 @@
+var t="/homework-0.0.1-SNAPSHOT";
 function findOrder() {
     isOnline();
     var xhr = window.XMLHttpRequest ? new XMLHttpRequest() : new ActiveXObject('Microsoft.XMLHTTP');
-    xhr.open('post', '/findOrder');
+    xhr.open('post', t+'/findOrder');
     xhr.setRequestHeader('content-type', "application/x-www-form-urlencoded");
     xhr.onreadystatechange = function () {
         if (xhr.readyState == 4)

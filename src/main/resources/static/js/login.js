@@ -1,3 +1,4 @@
+var t="/homework-0.0.1-SNAPSHOT";
 function login() {
     var email = document.getElementById('email1').value;
     var password = document.getElementById('psw1').value;
@@ -12,7 +13,7 @@ function login_ajax() {
     var xhr = window.XMLHttpRequest ? new XMLHttpRequest() : new ActiveXObject('Microsoft.XMLHTTP');
     var email = document.getElementById('email1').value;
     var password = document.getElementById('psw1').value;
-    xhr.open('post', '/loginin');
+    xhr.open('post', t+'/loginin');
     xhr.setRequestHeader('content-type', "application/x-www-form-urlencoded");
     xhr.onreadystatechange = function () {
         if (xhr.readyState == 4)
@@ -44,7 +45,7 @@ function register() {
 function register_ajax() {
     var xhr = window.XMLHttpRequest ? new XMLHttpRequest() : new ActiveXObject('Microsoft.XMLHTTP');
     var password = document.getElementById('psw2');
-    xhr.open('post', '/register');
+    xhr.open('post', t+'/register');
     xhr.setRequestHeader('content-type', "application/x-www-form-urlencoded");
     xhr.onreadystatechange = function () {
         if (xhr.readyState == 4)

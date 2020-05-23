@@ -1,6 +1,7 @@
+var t="/homework-0.0.1-SNAPSHOT";
 function addCart(id) {
     var xhr = window.XMLHttpRequest ? new XMLHttpRequest() : new ActiveXObject('Microsoft.XMLHTTP');
-    xhr.open('post', '/addCart');
+    xhr.open('post', t+'/addCart');
     xhr.setRequestHeader('content-type', "application/x-www-form-urlencoded");
     xhr.onreadystatechange = function () {
         if (xhr.readyState == 4)
@@ -18,7 +19,7 @@ function addCart(id) {
 
 function buyOne(id) {
     var xhr = window.XMLHttpRequest ? new XMLHttpRequest() : new ActiveXObject('Microsoft.XMLHTTP');
-    xhr.open('post', '/buyOne');
+    xhr.open('post', t+'/buyOne');
     xhr.setRequestHeader('content-type', "application/x-www-form-urlencoded");
     xhr.onreadystatechange = function () {
         if (xhr.readyState == 4)

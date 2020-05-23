@@ -1,8 +1,8 @@
 window.onload = isOnline;
-
+var t="/homework-0.0.1-SNAPSHOT";
 function logout() {
     var xhr = window.XMLHttpRequest ? new XMLHttpRequest() : new ActiveXObject('Microsoft.XMLHTTP');
-    xhr.open('post', '/logout');
+    xhr.open('post', t+'/logout');
     xhr.setRequestHeader('content-type', "application/x-www-form-urlencoded");
     xhr.onreadystatechange = function () {
         if (xhr.readyState == 4)
@@ -10,16 +10,15 @@ function logout() {
                 var data = JSON.parse(xhr.responseText);
                 if (data) {
                     alert('退出成功！');
-                    window.location.href = "/html/homePage.html";
+                    window.location.href = "../html/homePage.html";
                 }
             }
     };
     xhr.send();
 }
-
 function isOnline() {
     var xhr = window.XMLHttpRequest ? new XMLHttpRequest() : new ActiveXObject('Microsoft.XMLHTTP');
-    xhr.open('post', '/isOnline');
+    xhr.open('post', t+'/isOnline');
     xhr.setRequestHeader('content-type', "application/x-www-form-urlencoded");
     xhr.onreadystatechange = function () {
         if (xhr.readyState == 4)

@@ -1,7 +1,8 @@
+var t="/homework-0.0.1-SNAPSHOT";
 function searchCart() {
     isOnline();
     var xhr = window.XMLHttpRequest ? new XMLHttpRequest() : new ActiveXObject('Microsoft.XMLHTTP');
-    xhr.open('post', '/searchCart');
+    xhr.open('post', t+'/searchCart');
     xhr.setRequestHeader('content-type', "application/x-www-form-urlencoded");
     xhr.onreadystatechange = function () {
         if (xhr.readyState == 4)
@@ -117,7 +118,7 @@ function buy() {
         return;
     }
     var xhr = window.XMLHttpRequest ? new XMLHttpRequest() : new ActiveXObject('Microsoft.XMLHTTP');
-    xhr.open('post', '/addOrder');
+    xhr.open('post', t+'/addOrder');
     xhr.setRequestHeader('content-type', "application/json");
     xhr.onreadystatechange = function () {
         if (xhr.readyState == 4)
